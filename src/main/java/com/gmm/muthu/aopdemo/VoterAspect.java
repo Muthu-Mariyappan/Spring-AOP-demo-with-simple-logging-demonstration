@@ -26,9 +26,9 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class VoterAspect {
 
-	private final String TOTAL_VOTE_COUNT_LOG_PATH = "L:\\eclipse-java-neon-3-RC3-win32\\eclipse\\Neonite\\aopdemo\\src\\main\\java\\com\\gmm\\muthu\\aopdemo\\totalvotecount";
-	private final String UNDERAGED_VOTE_LOG_PATH = "L:\\eclipse-java-neon-3-RC3-win32\\eclipse\\Neonite\\aopdemo\\src\\main\\java\\com\\gmm\\muthu\\aopdemo\\underagedvotelog";
-	private final String VALID_VOTE_LOG_PATH = "L:\\eclipse-java-neon-3-RC3-win32\\eclipse\\Neonite\\aopdemo\\src\\main\\java\\com\\gmm\\muthu\\aopdemo\\validvotelog";
+	private final String TOTAL_VOTE_COUNT_LOG_PATH = "put absolute path name of totalvotecount file";
+	private final String UNDERAGED_VOTE_LOG_PATH = "put absolute path name of underagedvotelog file";
+	private final String VALID_VOTE_LOG_PATH = "put absolute path name of validvotelog file";
 	
 	//It is a pointcut expression which matches the join point voteInElection which is in target object AOPVoting
 	private final String POINTCUT_EXPRESSION = "execution(* AOPVoting.vote*(..))"; 
